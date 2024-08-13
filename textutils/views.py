@@ -14,7 +14,7 @@ def analyze(request):
 
     if removepunc=='on':
         analyzed = ""
-        punctuations= '''.…/‘“”<>{}[]()—–;:,!?.'''
+        punctuations= '''.…/‘“”<>{}[]()—–;:,!?.*'''
         for char in djtext:
             if char not in punctuations:
                 analyzed = analyzed+char
